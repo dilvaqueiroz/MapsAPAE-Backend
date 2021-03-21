@@ -1,6 +1,4 @@
 # MapsAPAE-frontend
-
-# MapsAPAE
 Aplicativo construído para APAE-Serra Talhada, realização cadastro de endereços, mapeamento e rotas dos colaboradores, doadores e usuários da associação
 
 ### Tecnologias 
