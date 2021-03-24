@@ -1,10 +1,10 @@
 import Image from '../models/ImageDoador';
-
+const porta = process.env.PORT || 'http://localhost:3333'
 export default{
     render(image: Image){
         return{
             id:image.id,
-            url:`http://localhost:3333/uploads/${image.path}`,
+            url:`${porta}/uploads/${image.path}`,
         };
     },
 
