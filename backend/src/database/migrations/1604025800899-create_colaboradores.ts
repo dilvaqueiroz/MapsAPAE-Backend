@@ -21,14 +21,14 @@ export class createColaboradores1604025800899 implements MigrationInterface {
                 {
                     name:'latitude',
                     type:'decimal',
-                    scale:10,
-                    precision:2,
+                    scale:2,
+                    precision:4,
                 },
                 {
                     name:'longitude',
                     type:'decimal',
-                    scale:10,
-                    precision:2,
+                    scale:2,
+                    precision:4,
                 },
                 {
                     name:'cep',

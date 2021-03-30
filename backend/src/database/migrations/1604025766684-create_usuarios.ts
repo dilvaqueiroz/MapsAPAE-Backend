@@ -21,14 +21,14 @@ export class createUsuarios1604025766684 implements MigrationInterface {
                 {
                     name:'latitude',
                     type:'decimal',
-                    scale:10,
-                    precision:2,
+                    scale:2,
+                    precision:4,
                 },
                 {
                     name:'longitude',
                     type:'decimal',
-                    scale:10,
-                    precision:2,
+                    scale:2,
+                    precision:4,
                 },
                 {
                     name:'cep',
