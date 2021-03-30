@@ -21,13 +21,13 @@ export class createDoadores1604025788710 implements MigrationInterface {
                 {
                     name:'latitude',
                     type:'decimal',
-                    scale:10,
+                    scale:2,
                     precision:2,
                 },
                 {
                     name:'longitude',
                     type:'decimal',
-                    scale:10,
+                    scale:2,
                     precision:2,
                 },
                 {

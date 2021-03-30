@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "node src/server.ts",
-  "engines": { "node": "v15.10.0" },
+  "engines": {
+    "node": "v15.10.0"
+  },
   "scripts": {
     "start": "node src/server.ts",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
@@ -20,6 +22,7 @@
     "express-async-errors": "^3.1.1",
     "multer": "^1.4.2",
     "multer-sharp-s3": "^0.2.1",
+    "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "sharp": "^0.26.3",
     "sqlite3": "^5.0.0",
