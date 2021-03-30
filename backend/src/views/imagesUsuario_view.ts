@@ -1,10 +1,9 @@
 import Image from '../models/ImageUsuario';
-const porta = process.env.PORT || 'http://localhost:3333'
 export default{
     render(image: Image){
         return{
             id:image.id,
-            url:`${porta}/uploads/${image.path}`,
+            url:`${process.env.APP_URL}/uploads/${image.path}`,
         };
     },
 
