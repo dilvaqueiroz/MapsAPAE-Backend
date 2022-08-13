@@ -27,9 +27,9 @@ routes.post('/colaboradores',upload.array('images'),ColaboradoresController.crea
 
 routes.put('/users/:id/changed', upload.array('images'), UsuariosController.change);
 routes.get('/users/:id/change',UsuariosController.show);
-routes.put('/donor/:id/changed',upload.array('images'),DoadoresController.change);
+routes.put('/donors/:id/changed',upload.array('images'),DoadoresController.change);
 routes.get('/donor/:id/change',DoadoresController.show);
-routes.put('/collaborator/:id/changed',upload.array('images'),ColaboradoresController.change);
+routes.put('/collaborators/:id/changed',upload.array('images'),ColaboradoresController.change);
 routes.get('/collaborator/:id/change',ColaboradoresController.show);
 
 export default routes;

@@ -10,5 +10,5 @@ export default{
          const fileName = `${Date.now()}-${file.originalname}`;
          cb(null,fileName);
         },
-    }),
+    }),  
 };

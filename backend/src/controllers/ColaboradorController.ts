@@ -1,11 +1,12 @@
 import {Request, Response} from 'express';
-import{Any, getRepository} from 'typeorm';
+import{getRepository, Like} from 'typeorm';
 import colaboradorView from '../views/colaboradores_view';
 import * as Yup from 'yup';
 import sharp from 'sharp';
+
 import fs from 'fs';
 
-import  Colaborador from '../models/Colaborador';
+import Colaborador from '../models/Colaborador';
 
 export default{
 
@@ -36,12 +37,12 @@ export default{
 
         const colaboradoresRepository = getRepository(Colaborador);
 
-        const colaborador = await colaboradoresRepository.find({
+        const doador = await colaboradoresRepository.find({
             relations: ['images'],
             where: `name LIKE '%${name}%'`
-        });
+        })
 
-        return response.json(colaboradorView.renderMany(colaborador));
+        return response.json(colaboradorView.renderMany(doador));
     },
 
     async create(request: Request ,response: Response){
@@ -55,13 +56,13 @@ export default{
             district,
             about,
             opening_hours,
-            open_on_weekends, 
+            open_on_weekends
         } = request.body;
     
         const colaboradoresRepository = getRepository(Colaborador);
 
-        
         const requestImages =request.files as Express.Multer.File[];
+
 
         const images= requestImages.map(image=>{
 
@@ -91,6 +92,7 @@ export default{
 
             return{path:returnPath}
         })
+
     
         const data = {
             name,
@@ -122,6 +124,9 @@ export default{
                 path:Yup.string(),
             })
             )
+            /* images: Yup.object().shape({
+                path: Yup.string()
+            }) */
         });
 
         await schema.validate(data,{
@@ -136,7 +141,6 @@ export default{
     
         return response.status(201).json({colaborador});
     },
-
 
     async change(request: Request ,response: Response){
         // Novo metodo para put (alterar, modificar, editar)
@@ -199,14 +203,14 @@ export default{
 
         const colaboradoresRepository = getRepository(Colaborador);
 
-        const collaborator = await colaboradoresRepository.findOneOrFail(id, {
+        const colaborator = await colaboradoresRepository.findOneOrFail(id, {
             relations: ['images']
         });
 
-        colaboradoresRepository.merge(collaborator, data);
+        colaboradoresRepository.merge(colaborator, data);
 
-        await colaboradoresRepository.save(collaborator);
+        await colaboradoresRepository.save(colaborator);
 
-        return response.status(201).json({collaborator})
+        return response.status(201).json({colaborator})
     },
 };
