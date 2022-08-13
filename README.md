@@ -8,7 +8,7 @@ Aplicativo construído para APAE-Serra Talhada, realização cadastro de endere�
   - [TypeScript](https://www.typescriptlang.org/)
 
 ## 🔥 Preview
-![login](https://user-images.githubusercontent.com/48795370/111868928-a482d900-895b-11eb-9b72-d2724fe71b80.png)
+![image](https://user-images.githubusercontent.com/48795370/184456375-a60a3c88-c894-4460-a0ea-81c425658ea9.png)
 
 ![dentro](https://user-images.githubusercontent.com/48795370/111868938-b2d0f500-895b-11eb-82b5-e1a95ac31d07.png)
 
