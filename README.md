@@ -10,7 +10,7 @@ Aplicativo construído para APAE-Serra Talhada, realização cadastro de endere�
 ## 🔥 Preview
 ![image](https://user-images.githubusercontent.com/48795370/184456375-a60a3c88-c894-4460-a0ea-81c425658ea9.png)
 
-![dentro](https://user-images.githubusercontent.com/48795370/111868938-b2d0f500-895b-11eb-82b5-e1a95ac31d07.png)
+![image](https://user-images.githubusercontent.com/48795370/184509299-36c55b27-b646-493a-86cf-5795cd02f590.png)
 
 
 ### 🚀 Instalação
