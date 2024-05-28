@@ -10,6 +10,9 @@ export default class Usuario{
     name:string;
 
     @Column()
+    type_user:string;
+
+    @Column()
     latitude:number;
 
     @Column()

@@ -19,6 +19,10 @@ export class createUsuarios1604025766684 implements MigrationInterface {
                     type: 'varchar',
                 },
                 {
+                    name: 'type_user',
+                    type: 'varchar',
+                },
+                {
                     name:'latitude',
                     type:'decimal',
                     scale:2,

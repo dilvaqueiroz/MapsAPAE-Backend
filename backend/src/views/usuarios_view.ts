@@ -6,6 +6,7 @@ export default{
         return{
             id:usuario.id,
             name:usuario.name,
+            type_user: usuario.type_user,
             cep: usuario.cep,
             street: usuario.street,
             district: usuario.district,

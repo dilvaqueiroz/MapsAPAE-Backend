@@ -47,6 +47,7 @@ export default{
     async create(request: Request ,response: Response){
         const {
             name,
+            type_user,
             latitude,
             longitude,
             cep,
@@ -95,6 +96,7 @@ export default{
     
         const data = {
             name,
+            type_user,
             latitude,
             longitude,
             cep,
@@ -110,6 +112,7 @@ export default{
 
         const schema =Yup.object().shape({
             name: Yup.string().required('Nome obrigatório'),
+            type_user: Yup.string().required(),
             latitude: Yup.number().required(),
             longitude: Yup.number().required(),
             about: Yup.string().required().max(300),
@@ -144,6 +147,7 @@ export default{
 
         const {
             name,
+            type_user,
             latitude,
             longitude,
             cep,
@@ -164,6 +168,7 @@ export default{
 
         const data = {
             name,
+            type_user,
             latitude,
             longitude,
             cep,
@@ -179,6 +184,7 @@ export default{
 
         const schema = Yup.object().shape({
             name: Yup.string().required('Nome obrigatório'),
+            type_user: Yup.string().required(),
             latitude: Yup.number().required(),
             longitude: Yup.number().required(),
             about: Yup.string().required().max(300),
