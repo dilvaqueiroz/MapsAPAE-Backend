@@ -1,7 +1,8 @@
 # MapsAPAE-Backend
-Aplicativo construído para APAE-Serra Talhada, realização cadastro de endereços, mapeamento e rotas dos colaboradores, doadores e usuários da associação
+Application built for APAE-Serra Talhada, including address registration, mapping, and routing for staff, donors, and users of the association.
 
-### Tecnologias 
+
+### Technologies 
 
   - [Node.js](https://nodejs.org/en/)
   - [React](https://reactjs.org/)
@@ -13,19 +14,20 @@ Aplicativo construído para APAE-Serra Talhada, realização cadastro de endere�
 ![image](https://user-images.githubusercontent.com/48795370/184509299-36c55b27-b646-493a-86cf-5795cd02f590.png)
 
 
-### 🚀 Instalação
+### 🚀 Installation
 
-Para Instalar todas as dependências do projeto use:
+To install all project dependencies, use:
 
 ```sh
 $ npm i
 ```
 
-### Desenvolvimento
+### Development
 
-Para iniciar e contribuir com o projeto use as seguintes linhas de comando
+To start and contribute to the project, use the following command lines
 
-Para iniciar aplicativo:
+To start the application:
+
 ```sh
 $ npm run dev
 ```
